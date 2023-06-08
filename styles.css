@@ -1,0 +1,57 @@
+header {
+    background-color: #b3b3b3;
+    color: black;
+    padding: 5px;
+    margin-bottom: 1px;
+}
+p{
+    background-color: #cccccc;
+    color: black;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+footer{
+    background-color: #ffff9a;
+    color: black;
+    padding: 5px;
+}
+footer span{
+    font-weight: bold;
+}
+.phone.tablet.desktop {
+    display: none; 
+}
+
+@media only screen and (max-width: 480px) {
+    .phone {
+        display: inline; 
+    }
+    .tablet {
+        display: none; 
+    }
+    .desktop {
+        display: none; 
+    }
+}
+@media only screen and (min-width: 481px) {
+    .tablet {
+        display: inline; 
+    }
+    .phone {
+        display: none; 
+    }
+    .desktop {
+        display: none; 
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .desktop {
+        display: inline; 
+    }
+    .phone {
+        display: none; 
+    }
+    .tablet {
+        display: none; 
+    }
+}
